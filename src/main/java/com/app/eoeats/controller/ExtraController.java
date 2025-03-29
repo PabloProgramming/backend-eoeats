@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/extra")
+@CrossOrigin(origins = {
+        "https://your-vercel-app.vercel.app",
+        "http://localhost:8080"
+})
 public class ExtraController {
 
     @Autowired

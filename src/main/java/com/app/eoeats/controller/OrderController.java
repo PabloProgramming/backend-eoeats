@@ -12,6 +12,10 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/order")
+@CrossOrigin(origins = {
+        "https://your-vercel-app.vercel.app",
+        "http://localhost:8080"
+})
 public class OrderController {
 
     @Autowired
