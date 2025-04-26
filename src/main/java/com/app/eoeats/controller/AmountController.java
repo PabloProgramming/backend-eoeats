@@ -12,7 +12,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/amount")
 @CrossOrigin(origins = {
-        "https://your-vercel-app.vercel.app",
+        "https://front-eoeats.vercel.app",
         "http://localhost:8080"
 })
 public class AmountController {

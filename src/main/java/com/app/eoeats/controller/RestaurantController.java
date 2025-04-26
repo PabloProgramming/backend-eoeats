@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = {
-        "https://your-vercel-app.vercel.app",
+        "https://front-eoeats.vercel.app",
         "http://localhost:8080"
 })
 @Controller
