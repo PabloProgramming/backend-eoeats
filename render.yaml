@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: backend-eoeats
+    runtime: java
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -Xmx350m -Xss256k -XX:+UseContainerSupport -jar target/eoeats-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: DB_URL
+        value: jdbc:postgresql://db.xpmgwiivsvzxtlyoiccd.supabase.co:5432/postgres
+      - key: PGUSER
+        value: postgres
+      - key: PGPASSWORD
+        sync: false
+      - key: JAVA_OPTS
+        value: -Xmx350m -Xss256k -XX:+UseContainerSupport
